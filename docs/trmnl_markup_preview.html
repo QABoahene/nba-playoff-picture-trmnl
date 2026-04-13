@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TRMNL Payload Preview</title>
+    <link rel="stylesheet" href="https://trmnl.com/css/latest/plugins.css">
+    <script src="https://trmnl.com/js/latest/plugins.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;350;375;400;450;600;700&display=swap" rel="stylesheet">
+    <style>
+  .np-board { display:flex; flex-direction:column; height:100%; gap:12px; }
+  .np-bracket { display:grid; grid-template-columns: 1fr 120px 1fr; gap:16px; align-items:start; }
+  .np-conference { display:flex; flex-direction:column; gap:8px; }
+  .np-card-stack { display:flex; flex-direction:column; gap:8px; }
+  .np-matchup-card { border:1px solid var(--stroke); border-radius:12px; padding:8px 10px; background:var(--color-bg); }
+  .np-matchup-card--compact { padding:6px 8px; }
+  .np-team-line { display:grid; grid-template-columns: 28px 18px 1fr 14px; gap:8px; align-items:center; padding:6px 0; }
+  .np-team-line + .np-team-line { border-top:1px solid var(--stroke); }
+  .np-seed, .np-wins { font-size:12px; font-weight:700; }
+  .np-team { font-size:18px; font-weight:800; line-height:1; }
+  .np-logo { width:16px; height:16px; object-fit:contain; }
+  .np-logo--placeholder { display:inline-block; border-radius:999px; background:var(--stroke); }
+  .np-finals { display:flex; flex-direction:column; gap:8px; justify-self:center; align-self:center; width:100%; }
+  .np-finals-card { border:1px solid var(--stroke); border-radius:14px; padding:12px 10px; text-align:center; }
+  .np-finals-team { font-size:18px; font-weight:800; padding:8px 0; }
+  .np-scores { display:flex; flex-direction:column; gap:8px; border-top:1px solid var(--stroke); padding-top:10px; }
+  .np-scores-grid { display:grid; grid-template-columns: repeat(5, 1fr); gap:8px; }
+  .np-score-row { border:1px solid var(--stroke); border-radius:10px; padding:8px; min-height:58px; display:flex; flex-direction:column; justify-content:space-between; }
+  .np-score-row--compact { min-height:auto; }
+  .np-score-matchup { font-size:13px; font-weight:700; line-height:1.2; }
+  .np-scores-empty { font-size:13px; color:var(--color-text-subtle); }
+  .np-mini-panel { display:flex; flex-direction:column; gap:8px; width:100%; }
+</style>
+  </head>
+  <body class="environment trmnl">
+    <div class="screen">
+      <div class="view view--full">
+  <div class="layout">
+    <div class="np-board">
+      <div class="np-bracket">
+        <section class="np-conference">
+          <span class="label label--small label--gray">West</span>
+          <div class="np-card-stack">
+            <article class="np-matchup-card">
+  <div class="np-team-line">
+  <span class="np-seed">#1</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.svg" alt="OKC logo" />
+  <span class="np-team">OKC</span>
+  <span class="np-wins">3</span>
+</div>
+  <div class="np-team-line">
+  <span class="np-seed">#8</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612757/primary/L/logo.svg" alt="POR logo" />
+  <span class="np-team">POR</span>
+  <span class="np-wins">1</span>
+</div>
+</article><article class="np-matchup-card">
+  <div class="np-team-line">
+  <span class="np-seed">#4</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612747/primary/L/logo.svg" alt="LAL logo" />
+  <span class="np-team">LAL</span>
+  <span class="np-wins">2</span>
+</div>
+  <div class="np-team-line">
+  <span class="np-seed">#5</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612745/primary/L/logo.svg" alt="HOU logo" />
+  <span class="np-team">HOU</span>
+  <span class="np-wins">1</span>
+</div>
+</article><article class="np-matchup-card">
+  <div class="np-team-line">
+  <span class="np-seed">#2</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612759/primary/L/logo.svg" alt="SAS logo" />
+  <span class="np-team">SAS</span>
+  <span class="np-wins">2</span>
+</div>
+  <div class="np-team-line">
+  <span class="np-seed">#7</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612756/primary/L/logo.svg" alt="PHX logo" />
+  <span class="np-team">PHX</span>
+  <span class="np-wins">2</span>
+</div>
+</article><article class="np-matchup-card">
+  <div class="np-team-line">
+  <span class="np-seed">#3</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612743/primary/L/logo.svg" alt="DEN logo" />
+  <span class="np-team">DEN</span>
+  <span class="np-wins">3</span>
+</div>
+  <div class="np-team-line">
+  <span class="np-seed">#6</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612750/primary/L/logo.svg" alt="MIN logo" />
+  <span class="np-team">MIN</span>
+  <span class="np-wins">1</span>
+</div>
+</article>
+          </div>
+        </section>
+        <section class="np-finals">
+          <span class="label label--small label--underline">NBA Finals</span>
+          <div class="np-finals-card">
+            <div class="np-finals-team">TBD</div>
+            <div class="np-finals-team">TBD</div>
+          </div>
+        </section>
+        <section class="np-conference">
+          <span class="label label--small label--gray">East</span>
+          <div class="np-card-stack">
+            <article class="np-matchup-card">
+  <div class="np-team-line">
+  <span class="np-seed">#1</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612765/primary/L/logo.svg" alt="DET logo" />
+  <span class="np-team">DET</span>
+  <span class="np-wins">2</span>
+</div>
+  <div class="np-team-line">
+  <span class="np-seed">#8</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612753/primary/L/logo.svg" alt="ORL logo" />
+  <span class="np-team">ORL</span>
+  <span class="np-wins">2</span>
+</div>
+</article><article class="np-matchup-card">
+  <div class="np-team-line">
+  <span class="np-seed">#4</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612739/primary/L/logo.svg" alt="CLE logo" />
+  <span class="np-team">CLE</span>
+  <span class="np-wins">0</span>
+</div>
+  <div class="np-team-line">
+  <span class="np-seed">#5</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612761/primary/L/logo.svg" alt="TOR logo" />
+  <span class="np-team">TOR</span>
+  <span class="np-wins">3</span>
+</div>
+</article><article class="np-matchup-card">
+  <div class="np-team-line">
+  <span class="np-seed">#2</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612738/primary/L/logo.svg" alt="BOS logo" />
+  <span class="np-team">BOS</span>
+  <span class="np-wins">2</span>
+</div>
+  <div class="np-team-line">
+  <span class="np-seed">#7</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612755/primary/L/logo.svg" alt="PHI logo" />
+  <span class="np-team">PHI</span>
+  <span class="np-wins">2</span>
+</div>
+</article><article class="np-matchup-card">
+  <div class="np-team-line">
+  <span class="np-seed">#3</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612752/primary/L/logo.svg" alt="NYK logo" />
+  <span class="np-team">NYK</span>
+  <span class="np-wins">2</span>
+</div>
+  <div class="np-team-line">
+  <span class="np-seed">#6</span>
+  <img class="image np-logo" src="https://cdn.nba.com/logos/nba/1610612737/primary/L/logo.svg" alt="ATL logo" />
+  <span class="np-team">ATL</span>
+  <span class="np-wins">1</span>
+</div>
+</article>
+          </div>
+        </section>
+      </div>
+      <section class="np-scores">
+        <span class="label label--small label--underline">Recent Scores</span>
+        <div class="np-scores-grid">
+          <div class="np-scores-empty">Recent playoff scores unavailable</div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="title_bar">
+    <span class="title">NBA Playoffs</span>
+  </div>
+</div>
+    </div>
+  </body>
+</html>

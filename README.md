@@ -37,6 +37,16 @@ At this stage:
 
 Application logic, rendering, and TRMNL integration are still to be built.
 
+## Disclaimer
+
+This project is an unofficial fan-made TRMNL plugin and is not affiliated with, endorsed by, or sponsored by the NBA or its teams.
+
+NBA names, logos, team marks, statistics, schedules, scores, and related intellectual property are owned by their respective rights holders.
+
+This project is intended as a personal, educational, and non-commercial project. Data used by this plugin is sourced from NBA.com through `nba_api`, with attribution to NBA.com where applicable.
+
 ## Notes
 
 The hosting and update strategy for TRMNL is still being evaluated. One possible approach is to use GitHub Actions to run scheduled data updates and send processed data to a webhook or hosted endpoint for the plugin.
+
+To reduce unnecessary load on upstream data sources, the project should use caching and avoid excessively frequent requests wherever possible.
